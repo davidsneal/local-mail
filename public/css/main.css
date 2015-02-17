@@ -1,0 +1,100 @@
+/* Main */
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-size:30px;
+	margin: 50px 0 50px 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background: #2c3e50;
+  overflow: scroll;
+  color:#fff;
+}
+
+
+/*  Excerpts */
+
+.mail-excerpts {
+	text-align: left;
+	list-style: none;
+	padding-left: 0;
+}
+
+.mail-excerpt {
+	padding:10px 10px 10px 40px;
+}
+
+.mail-excerpt:hover {
+	cursor: pointer;
+}
+
+.mail-excerpt-subject {
+	font-weight: 300;
+}
+
+.mail-excerpt-new, .mail-excerpt-new span {
+	font-weight: 700;
+}
+
+.mail-excerpt-active {
+	background-color: #fff;
+	color: #2c3e50;
+}
+
+.mail-excerpt:before {    
+    font-family: 'FontAwesome';
+    content: "\f003";
+    margin:0 5px 0 -25px;
+}
+
+.mail-excerpt-new:before {    
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    margin:0 5px 0 -25px;
+}
+
+.mail-excerpt-read:before, .mail-excerpt-active:before {    
+    font-family: 'FontAwesome';
+    content: "\f003";
+    margin:0 5px 0 -25px;
+}
+
+
+/* Email Header */
+
+.mail-header {
+	padding:20px;
+	background-color: #ecf0f1;
+	width: 100%;
+	margin-left: 250px;
+}
+.mail-header-subject {
+	font-weight: bold;
+	font-size: 20px;
+}
+.mail-header table {
+	margin-top:10px;
+	text-align: left;
+}
+.mail-header table th {
+	text-align: right;
+	padding-right:15px;
+}
+
+
+/* Email Content */
+
+.content {
+  margin-left: 250px;
+  padding:20px;
+}

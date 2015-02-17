@@ -1,0 +1,1 @@
+<?php return array('mail_file' => 'var/mail/davidneal');

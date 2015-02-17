@@ -4,7 +4,7 @@ $( document ).ready(function() {
 	$('.mail-excerpt').click(function() {
 		
 		// remove selected class to last selected message
-		$('.mail-excerpt').removeClass( "mail-excerpt-active" )
+		$('.mail-excerpt').removeClass( "mail-excerpt-active" );
 		
 		// add selected class to current message
 		$(this).addClass('mail-excerpt-active');
@@ -12,7 +12,10 @@ $( document ).ready(function() {
 		// get message id from excerpt
 		var messageid = $(this).data('messageid');
 		
+		// get the email data in json format
 		$.get( '/email/' + messageid, function( email ) {
+			
+			// replace body and header as needed
 			$( ".content" ).html( email.body );
 			$( ".mail-header" ).html( email.header );
 		});

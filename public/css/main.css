@@ -69,6 +69,10 @@ body {
     margin:0 5px 0 -25px;
 }
 
+/* Main section */
+.main {
+	margin-left:250px;
+}
 
 /* Email Header */
 
@@ -76,7 +80,6 @@ body {
 	padding:20px;
 	background-color: #ecf0f1;
 	width: 100%;
-	margin-left: 250px;
 }
 .mail-header-subject {
 	font-weight: bold;
@@ -95,6 +98,5 @@ body {
 /* Email Content */
 
 .content {
-  margin-left: 250px;
   padding:20px;
 }

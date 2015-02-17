@@ -25,9 +25,10 @@
 	</ul>
 </div>
 
-<div class="mail-header">No email selected</div>
-
-<div class="content"></div>
+<div class="main">
+	<div class="mail-header">No email selected</div>
+	<div class="content"></div>
+</div>
 
 <script src="/js/jquery.min.js"></script>
 <script src="/js/main.js"></script>

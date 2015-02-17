@@ -5,9 +5,16 @@ body {
 }
 
 .logo {
+	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size:30px;
-	margin: 50px 0 50px 20px;
+	height: 101px;
+	padding-top: 20px;
+}
+
+.logo i {
+	font-size: 50px;
+	display: block;
 }
 
 .sidebar {
@@ -16,7 +23,7 @@ body {
   left: 0;
   bottom: 0;
   width: 250px;
-  background: #2c3e50;
+  background: #E32D40;
   overflow: scroll;
   color:#fff;
 }
@@ -77,8 +84,9 @@ body {
 /* Email Header */
 
 .mail-header {
+	color:#fff;
 	padding:20px;
-	background-color: #ecf0f1;
+	background-color: #152B3C;
 	width: 100%;
 }
 .mail-header-subject {

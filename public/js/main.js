@@ -1,10 +1,12 @@
 $( document ).ready(function() {
+	
+	var mailExcerpt = $('.mail-excerpt');
 
 	// excerpt clicked
-	$('.mail-excerpt').click(function() {
+	mailExcerpt.click(function() {
 		
 		// remove selected class to last selected message
-		$('.mail-excerpt').removeClass( "mail-excerpt-active" );
+		mailExcerpt.removeClass( "mail-excerpt-active" );
 		
 		// add selected class to current message
 		$(this).addClass('mail-excerpt-active');
@@ -16,8 +18,8 @@ $( document ).ready(function() {
 		$.get( '/email/' + messageid, function( email ) {
 			
 			// replace body and header as needed
-			$( ".content" ).html( email.body );
-			$( ".mail-header" ).html( email.header );
+			$(".content").html(email.body);
+			$(".mail-header").html(email.header);
 		});
 	});
 });

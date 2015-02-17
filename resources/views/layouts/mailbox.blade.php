@@ -13,7 +13,7 @@
 
 <div class="sidebar">
 	<div class="logo">
-		<i class="fa fa-envelope-o"></i> LocalMail
+		<i class="fa fa-envelope-o"></i>LocalMail
 	</div>
 	<ul class="mail-excerpts">
 		@foreach($excerpts as $excerpt)

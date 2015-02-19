@@ -30,6 +30,8 @@
 	<div class="content"></div>
 </div>
 
+<span class="empty-mailbox"><i class="fa fa-trash-o"></i></span>
+
 <script src="/js/jquery.min.js"></script>
 <script src="/js/main.js"></script>
 </body>

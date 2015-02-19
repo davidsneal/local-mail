@@ -14,3 +14,5 @@
 Route::get('/', 'MailController@index');
 
 Route::get('/email/{messageid}', 'MailController@view');
+
+Route::get('/action/empty_mailbox', 'MailController@empty_mailbox');

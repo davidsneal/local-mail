@@ -22,4 +22,20 @@ $( document ).ready(function() {
 			$(".mail-header").html(email.header);
 		});
 	});
+	
+	// empty mailbox clicked
+	$('.empty-mailbox').click(function() {
+		
+		// remove selected class to last selected message
+		mailExcerpt.removeClass( "mail-excerpt-active" );
+		
+		// clear the mailbox file
+		$.get( '/action/empty_mailbox', function() {
+			
+			// reset div contents
+			$(".content").html('');
+			$(".mail-excerpts").html('No emails to display');
+			$(".mail-header").html('No message selected');
+		});
+	});
 });

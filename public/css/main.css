@@ -108,3 +108,18 @@ body {
 .content {
   padding:20px;
 }
+
+/* Misc */
+
+.empty-mailbox {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width:50px;
+	height:50px;
+	color:#fff;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	background: #E32D40;
+}

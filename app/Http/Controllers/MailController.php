@@ -90,7 +90,7 @@ class MailController extends Controller {
 		$mail_file = Config::get('settings.mail_file');
 
 		// connect to the mailbox
-		$this->mbox = imap_open('/var/mail/davidneal','','');
+		$this->mbox = imap_open($mail_file,'','');
 		
 		// if there's an error connecting
 		if( ! $this->mbox)
@@ -106,6 +106,19 @@ class MailController extends Controller {
 	{
 		// close the connection to the mailbox
 		imap_close($this->mbox);
+	}
+	
+	// empty the mailbox
+	public function empty_mailbox()
+	{
+		// get the mailfile location, set in /config/settings.php
+		$mail_file = Config::get('settings.mail_file');
+
+		// create a file handler by opening the file
+		$handler = @fopen($mail_file,"r+");
+		
+		//truncate the file to zero
+		@ftruncate($handler, 0);
 	}
 
 	// get required data for email excerpts

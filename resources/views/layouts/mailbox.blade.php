@@ -26,7 +26,7 @@
 </div>
 
 <div class="main">
-	<div class="mail-header">No email selected</div>
+	<div class="mail-header"></div>
 	<div class="content"></div>
 </div>
 

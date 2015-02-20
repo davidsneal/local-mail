@@ -35,7 +35,7 @@ $( document ).ready(function() {
 			// reset div contents
 			$(".content").html('');
 			$(".mail-excerpts").html('');
-			$(".mail-header").html('No message selected');
+			$(".mail-header").html('');
 		});
 	});
 });

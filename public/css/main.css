@@ -2,7 +2,6 @@
 
 body, html {
 	font-family: 'Lato', sans-serif;
-	overflow: hidden;
 }
 
 .logo {
@@ -95,6 +94,8 @@ body, html {
 	width: 100%;
 	height: 115px;
 	overflow: scroll;
+	position: fixed;
+	top: 0;
 }
 .mail-header-subject {
 	font-weight: bold;
@@ -114,12 +115,13 @@ body, html {
 
 .content {
   padding:20px;
+  margin-top: 150px;
 }
 
 /* Misc */
 
 .empty-mailbox {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	right: 0;
 	width:50px;
